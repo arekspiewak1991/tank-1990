@@ -6,6 +6,16 @@ public abstract class Tank {
     private int posX;
     private int posY;
 
+    public TankType getType() {
+        return type;
+    }
+
+    public void setType(TankType type) {
+        this.type = type;
+    }
+
+    private TankType type;
+
     public byte getLife() {
         return life;
     }
