@@ -1,0 +1,9 @@
+# Default ignored files
+/workspace.xml
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
