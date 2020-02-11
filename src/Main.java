@@ -1,5 +1,8 @@
+import gameplay.Gameplay;
+
 public class Main {
     public static void main(String[] args) {
-        // run game
+        Gameplay gameplay = new Gameplay();
+        gameplay.init(1100, 900);
     }
 }
