@@ -1,5 +1,7 @@
 package map;
 
+import gameplay.Gameplay;
+
 import javax.swing.*;
 import java.awt.*;
 
