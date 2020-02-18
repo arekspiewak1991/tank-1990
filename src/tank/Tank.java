@@ -1,10 +1,10 @@
 package tank;
 
-public abstract class Tank {
+public class Tank {
     private String name;
     private byte life;
-    private int posX;
-    private int posY;
+    public int posX;
+    public int posY;
 
     public TankType getType() {
         return type;
@@ -28,16 +28,32 @@ public abstract class Tank {
         return posX;
     }
 
-    public void setPosX(int posX) {
-        this.posX = posX;
+    public void setPosX(int changeX) {
+        int temp = this.posX + changeX;
+
+        if (temp < 25) {
+            this.posX = 25;
+        } else if (temp > 700) {
+            this.posX = 700;
+        } else {
+            this.posX = temp;
+        }
     }
 
     public int getPosY() {
         return posY;
     }
 
-    public void setPosY(int posY) {
-        this.posY = posY;
+    public void setPosY(int changeY) {
+        int temp = this.posY + changeY;
+
+        if (temp < 25) {
+            this.posY = 25;
+        } else if (temp > 700) {
+            this.posY = 700;
+        } else {
+            this.posY = temp;
+        }
     }
 
     public String getName() {
